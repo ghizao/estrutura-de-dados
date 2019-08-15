@@ -1,0 +1,67 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <script>
+            //  - retorne a soma dos elementos entre dois indices
+            let vet = [1,2,3,4,5,6,7,8,9]
+            let soma = 0
+
+            
+
+            function retornoElementos(a){
+                for(let i = 2 ; i <= 7; i++){
+                    soma = soma + vet[i]
+                }
+                return soma
+            }
+            document.write(retornoElementos(soma +"<br>"))
+            document.write("<br>")
+
+            //  - calcule a moda
+
+         /*   let vet2 = [2,2,3,4,6,2,7,9,8,8]
+            let aux = 0
+            let aux2 = 0
+            let result = 0
+            let aux3 = 0
+            function moda(cont,resultado){
+                
+                for(let i = 0 ; i < vet2.length; i++){
+                    for(let j = 0; j < vet2.length-1; j++){
+                        if(vet2[j] > vet2[j+1]){
+                        aux = vet2[j]
+                        vet2[j] = vet2[j+1]
+                        vet2[j+1] = aux
+                       
+                        }
+                    }
+         */
+          
+         // remova um elemento dado o vetor
+         //let vet = [1,2,3,4,5,6,7,8,9]
+
+         function removerElemento(elemento){
+           elemento = parseInt(prompt("Digite um numero"))
+             for(let i =0 ; i <= vet.length; i++){
+                 for(let j = 0; j <vet.length; j++){
+                    
+                    }if(elemento == vet[i]){
+                        vet.splice[i]
+                     //  document.write(" o elemento que retirou é  de indece " + i+ " " +" e numero "+" "+ vet[i])
+                   }
+                    if ( elemento != vet[i]) {
+                       // document.write(" numero nao encontrado no vetor tente novamente o valor retonado foi "  )
+                }
+            }
+            return 
+        }
+         document.write(removerElemento())
+           document.write("<br>")
+        </script>
+
+    </head>
+    <body>
+        <p>Isto é um paragrafo</p>
+    </body>
+
+</html>

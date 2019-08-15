@@ -1,0 +1,38 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <script>
+
+          
+         // remova um elemento dado o vetor
+         let vet = [1,2,3,4,5,6,7,8,9]
+            
+         function removerElemento(a){
+             let elemento = 0
+           elemento = parseInt(prompt("Digite um numero"))
+              for(let i =0 ; i <= vet.length; i++){
+                  /*for(let j = 0; j <vet.length; j++){
+                      
+                  }*/
+
+                     
+                    if(elemento == vet[i]){
+                         vet.splice[i]
+                        document.write(" o elemento que retirou é  de indece " + i+ " " +" e numero "+" "+ vet[i])
+                    }/*else (elemento != vet[i]);{
+                        document.write(" numero nao encontrado no vetor tente novamente o valor retonado foi " + elemento  )
+                 }*/
+             }
+            
+             
+         }
+          document.write(removerElemento())
+            document.write("<br>")
+        </script>
+
+    </head>
+    <body>
+        <p>Isto é um paragrafo</p>
+    </body>
+
+</html>

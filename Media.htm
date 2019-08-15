@@ -1,0 +1,45 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <script>
+           /*usando vetor, fazer funçao que 
+            - calcule a media dos elementos pares
+            - retorne a soma dos elementos entre dois indices
+            - calcule a moda
+            - remova um elemento dado o vetor
+            - remova um elemento dado o indice e retorne  valor
+            */
+            let vet = [6,7,8,9]
+            let pares = 0
+            let media = 0
+            let cont = 0
+            let resultado = 0
+            let moda
+            //- calcule a media dos elementos pares
+
+            function mediaPar(a){
+                for(let i = 0; i <= vet.length;i++){
+                    //Aqui ira verificar se o elemento é par
+                    if(vet[i] % 2 === 0){
+                        pares = pares + vet[i]
+                    }
+                    //ira contar quantos elementos tem
+                    cont = cont + 1
+                }
+                // esta fazendo a conta da media
+                media = pares/cont
+                //retornando o resultado
+                return media
+            }
+            document.write(mediaPar(media))
+            document.write("<br>")
+
+            
+        </script>
+
+    </head>
+    <body>
+        <p>Isto é um paragrafo</p>
+    </body>
+
+</html>
