@@ -1,0 +1,32 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <script>
+      
+            //  - inserção  Direta
+            
+            let vet2 = [25,57,48,37,18,92,86,33] //vetor de elementos fornecidos
+            let aux = 0
+            let j = 0 // variavel auxiliar para guardar o valor  do elemento maior
+                for(let i = 1 ; i < vet2.length; i++){
+                    j = i-1 // 1ª checagem j neste momento tem o valor do indice 0 (25)
+                        aux = vet2[i] // aux tem o valor do indice 1 (57)
+                    while((j >=0) && (vet2[j] > aux)){ // verificação j se for maior ou igual indice 0
+                        vet2[j+1] = vet2[j] // vet[J+1] (57) recebe o vet[j] =25
+                        j = j-1   // j(0) = j - 1 (0-1)
+                    }
+                    vet2[j+1] = aux
+                    
+                    document.write(vet2)
+                    document.write('<br>')
+                }
+                
+      
+        </script>
+
+    </head>
+    <body>
+        <p>Isto é um paragrafo</p>
+    </body>
+
+</html>
