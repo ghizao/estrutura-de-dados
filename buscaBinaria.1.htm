@@ -1,0 +1,36 @@
+<DOCTYPE! html>
+    <html>
+
+    <head>
+        <script>
+            //BuscaBinaria
+            let vet = [5, 6, 9, 10, 15, 20, 36, 45, 55, 90]
+            let primeiro = 0
+            let ultimo = vet.length - 1
+            let meio = 0
+            function BuscaBinaria(vetor, item) {
+                let primeiro = 0
+                let ultimo = vet.length - 1
+                let meio
+                while (primeiro <= ultimo) {
+                    meio = parseInt((ultimo+ primeiro) / 2)
+                    if (meio === item) {
+                        return meio
+                    } else if (vet[meio] < item) {
+                        primeiro = meio + 1
+                    } else {
+                        ultimo = meio - 1
+                    }
+                }
+                return -1
+            }
+            console.log(BuscaBinaria(vet, 10))
+        </script>
+
+    </head>
+
+    <body>
+        <p>Isto é um paragrafo</p>
+    </body>
+
+    </html>

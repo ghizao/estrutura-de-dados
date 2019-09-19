@@ -1,0 +1,45 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <script>
+      
+            //  Quicksort
+    let vet= [5,9,100,65,7,20,50,75,80]
+    function  quicksort(array, left, right){
+        var i = left;
+        var j = right;
+        var tmp;
+        var pivotidx = (left + right) / 2;
+        var pivot = parseInt(array[pivotidx.toFixed()]); 
+    // PARTI��O
+        while (i <= j){
+            while (parseInt(array[i]) < pivot)
+                i++;
+            while (parseInt(array[j]) > pivot)
+                j--;
+            if (i <= j){
+                tmp = array[i];
+                array[i] = array[j];
+                array[j] = tmp;
+                i++;
+                j--;
+        }
+    }
+    // RECURS�O
+        if (left < j)
+            quicksort(array, left, j);
+        if (i < right)
+            quicksort(array, i, right);
+        return array;
+}
+
+console.log(quicksort(vet, 0, length-1))
+      
+        </script>
+
+    </head>
+    <body>
+        <p>Isto é um paragrafo</p>
+    </body>
+
+</html>

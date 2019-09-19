@@ -1,0 +1,40 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <script>
+      
+            //  - Seleção Direta
+
+            let vet2 = [25,57,48,37,18,92,86,33]
+            let aux2 = 0
+            let aux = 0
+            function selecaoDireta(){
+                for(let i = 0 ; i < vet2.length-1; i++){
+                    aux2 = i
+                    for(let j = i+1; j < vet2.length; j++){
+                        if(vet2[j] < vet2[aux2]){
+                        aux2 = j
+                                            
+                        }
+                       
+                    }
+                    aux = vet2[i]
+                    vet2[i] = vet2[aux2]
+                    vet2[aux2] = aux
+                    console.log(vet2)
+
+                    document.write(vet2)
+                    document.write('<br>')
+                }
+                return vet2
+            }    
+            document.write(selecaoDireta())
+      
+        </script>
+
+    </head>
+    <body>
+        <p>Isto é um paragrafo</p>
+    </body>
+
+</html>
