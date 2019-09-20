@@ -1,0 +1,54 @@
+<DOCTYPE! html>
+    <html>
+
+    <head>
+        <script>
+            function validacao(simbolos) {
+                let pilhainicio = [];
+                for (let x = 0; x < simbolos.length; x++) {
+                    if (simbolos[x] == "(" || simbolos[x] == "{" || simbolos[x] == "[")
+                        pilhainicio.push(simbolos[x])
+
+                    if (simbolos[x] == ")" || simbolos[x] == "}" || simbolos[x] == "]") {
+                        if (pilhainicio.length == 0)
+                            return "INVÁLIDO";
+
+                        let pilhafim = pilhainicio.pop();
+
+                        if (pilhafim == "("  && simbolos[x] != ")")
+                            return "INVÁLIDO";
+                        else if (pilhafim == "{" && simbolos[x] != "}")
+                            return "INVÁLIDO";
+                        else if (pilhafim == "[" && simbolos[x] != "]")
+                            return "INVÁLIDO";
+
+                    }
+                }
+                return " CORRETO"
+            }
+
+            console.log(validacao("simbolo([]}"));
+            console.log(validacao("[({})]"));
+            console.log(validacao("()"));
+
+
+
+
+
+
+
+
+
+
+
+
+           
+        </script>
+
+    </head>
+
+    <body>
+        <p>Isto é um paragrafo</p>
+    </body>
+
+    </html>
