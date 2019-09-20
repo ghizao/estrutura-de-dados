@@ -24,12 +24,14 @@
 
                     }
                 }
+                if (pilhainicio.length > 0)
+                    return "INVÁLIDO"
                 return " CORRETO"
             }
 
             console.log(validacao("simbolo([]}"));
-            console.log(validacao("[({})]"));
-            console.log(validacao("()"));
+            console.log(validacao("[({})]()"));
+            console.log(validacao("[](){}"));
 
 
 
